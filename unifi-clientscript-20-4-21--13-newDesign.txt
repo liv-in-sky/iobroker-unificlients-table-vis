@@ -1,13 +1,13 @@
-  //@liv-in-sky 2021  20.4.-12:00
+  //@liv-in-sky 2021  21.4.-18:00
 
  // DAS WIDGET IN DER VIS
- // das Standard html-Widget wird genutzt in der VIS - dazu den DP javascript.x.Tabellen@Liv.UNIFIClientsTabelleVIS als binding angeben d.h.
- // im html-teil des widgets wird der daten punkt in geschweiften klammern angegeben z.B. {javascript.x.Tabellen@Liv.UNIFIClientsTabelleVIS}
+ // das Standard html-Widget wird genutzt in der VIS - dazu den DP javascript.x.Tabellen@Liv.SUNIFYClientsTabelleVIS als binding angeben d.h.
+ // im html-teil des widgets wird der daten punkt in geschweiften klammern angegeben z.B. {javascript.x.Tabellen@Liv.UNIFYClientsTabelleVIS}
 
  // @ts-ignoreMD
  let   braucheEinVISWidget=true;                          // immer true 
- let   dpVIS="UNIFIClientsTabelleVIS"                           // Name für Tabelle - keine datenpunkte eintragen !!
- let   dpJSON="UNIFIClientsTabelleJSON"                         // hier nicht genutzt- ist immer false
+ let   dpVIS="UNIFYClientsTabelleVIS"                           // Name für Tabelle - keine datenpunkte eintragen !!
+ let   dpJSON="UNIFYClientsTabelleJSON"                         // hier nicht genutzt- ist immer false
  let   willUnterUserdataSpeichern=false;                  // die Tabelle wird unter 0_userdata.0.... gespeichert
  let   braucheMaterialDesignWidget=false;                 // not in use
  let   braucheMaterialDesignWidgetList=false;             // not in use
@@ -27,9 +27,9 @@
  let abwesendZeit=187200000                  // in millisekunden für länger abwesende clients
 
 
- const apName = {  "b4:xx:e4:xx:xx:63" : { aname: "AP-LongR" , afarbe: "#737373"},    // standard #BDBDBD   afarbe is not in use !!!!!!
-                   "e0:63:da:xx:xx:2c" : { aname: "AP-Mesh" , afarbe: "#b3b300"},    // standard #BDBDBD
-                   "18:e8:29:xx:xx:e2" : { aname: "AP-Light" , afarbe: "#D8D8D8"}}    // standard #BDBDBD
+ const apName = {  "b4:fb:e4:f3:96:63" : { aname: "AP-LongR" , afarbe: "#737373"},    // standard #BDBDBD   afarbe is not in use !!!!!!
+                   "e0:63:da:b9:ec:2c" : { aname: "AP-Mesh" , afarbe: "#b3b300"},    // standard #BDBDBD
+                   "18:e8:29:56:40:e2" : { aname: "AP-Light" , afarbe: "#D8D8D8"}}    // standard #BDBDBD
 
             
 
@@ -280,7 +280,7 @@ $('unifi.0.*.clients.*.mac').each(function(id, i) {           // hier eigene sch
            if (existsState(id.replace("mac","ap_mac"))) { val[2]=getState(id.replace("mac","ap_mac")).val}
            if (existsState(id.replace("mac","essid"))) { valESSID=getState(id.replace("mac","essid")).val}
          let farbehelp;
-         //val[2]="";
+       //  val[2]="";
          for(let device_name in apName) {                            //Abfrage welcher AP
                       //   dlog(versuch[i].ap_mac +" - " + device_name +" - " + apName[device_name].aname); 
                          if (val[2]==device_name) {val[2] = apName[device_name].aname;farbehelp=apName[device_name].afarbe}}; 
@@ -392,6 +392,7 @@ $('unifi.0.*.clients.*.mac').each(function(id, i) {           // hier eigene sch
      valButton=myObject[zz].value6;
      valOffline=myObject[zz].value7;
      val[4]=valRSSI+"%";
+     valDevice=myObject[zz].value8;
  
    
      function makeButtons(value,dpID) {// log(dpID)
