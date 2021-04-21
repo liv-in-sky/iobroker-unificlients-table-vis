@@ -713,7 +713,7 @@ if (valOnline=="true") {
 
      htmlOut=htmlOut+ "<div class=\"divFlexBoxenEinzeln"+dpVIS+" divInFlex"+dpVIS+"\" "+divHelpi+">"+
                 ///  "<div><span style=\"font-size: 115%; color: "+htmlFarbTableColorUber+"\" >"+val[0]+"<br></span><span "+ "style=\"font-size:80%\">("+valDevice+")</span><hr></style></div>"+
-                  "<div><span style=\"font-size: 115%; color: "+"htmlFarbTableColorUber"+"\" >"+val[0]+"<br></span><span "+ "style=\"color:black; font-size:80%\">("+valDevice+")</span><hr></style></div>"+
+                  "<div><span style=\"font-size: 115%; color: "+"htmlFarbTableColorUber"+"\" >"+val[0]+"<br></span><span "+ "style=\"color:"+htmlFarbTableColorUber+"; font-size:80%\">("+valDevice+")</span><hr></style></div>"+
              //     "<div  style=\"display: inline-block; padding: 5px; border: 1px solid; border-radius: 5px ;margin-top: 5px; align: center; margin-bottom: 5px;\">"+
                  energyHelper+
    //               `<div style=\"display: inline-block; font-size:90%; margin: auto; padding: 5px; border: 1px solid; border-radius: 5px ;margin-top: 5px; margin-bottom: 5px;\"><span style=\"font-size:95%; font-weight: bold;\">INFO:</span><br>${versionFlex}<br>${val[5]}<br>${val[4]}</div>`+
