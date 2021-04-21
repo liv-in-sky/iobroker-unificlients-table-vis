@@ -280,7 +280,7 @@ $('unifi.0.default.clients.*.mac').each(function(id, i) {           // hier eige
            if (existsState(id.replace("mac","ap_mac"))) { val[2]=getState(id.replace("mac","ap_mac")).val}
            if (existsState(id.replace("mac","essid"))) { valESSID=getState(id.replace("mac","essid")).val}
          let farbehelp;
-         val[2]="";
+         //val[2]="";
          for(let device_name in apName) {                            //Abfrage welcher AP
                       //   dlog(versuch[i].ap_mac +" - " + device_name +" - " + apName[device_name].aname); 
                          if (val[2]==device_name) {val[2] = apName[device_name].aname;farbehelp=apName[device_name].afarbe}}; 
