@@ -6,8 +6,8 @@
 
  // @ts-ignoreMD
  let   braucheEinVISWidget=true;                          // immer true 
- let   dpVIS="UNIFYClientsTabelleVIS"                           // Name für Tabelle - keine datenpunkte eintragen !!
- let   dpJSON="UNIFYClientsTabelleJSON"                         // hier nicht genutzt- ist immer false
+ let   dpVIS="UNIFIClientsTabelleVIS"                           // Name für Tabelle - keine datenpunkte eintragen !!
+ let   dpJSON="UNIFIClientsTabelleJSON"                         // hier nicht genutzt- ist immer false
  let   willUnterUserdataSpeichern=false;                  // die Tabelle wird unter 0_userdata.0.... gespeichert
  let   braucheMaterialDesignWidget=false;                 // not in use
  let   braucheMaterialDesignWidgetList=false;             // not in use
