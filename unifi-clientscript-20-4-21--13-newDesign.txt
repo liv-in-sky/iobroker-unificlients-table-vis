@@ -27,9 +27,9 @@
  let abwesendZeit=187200000                  // in millisekunden für länger abwesende clients
 
 
- const apName = {  "b4:fb:e4:f3:96:63" : { aname: "AP-LongR" , afarbe: "#737373"},    // standard #BDBDBD   afarbe is not in use !!!!!!
-                   "e0:63:da:b9:ec:2c" : { aname: "AP-Mesh" , afarbe: "#b3b300"},    // standard #BDBDBD
-                   "18:e8:29:56:40:e2" : { aname: "AP-Light" , afarbe: "#D8D8D8"}}    // standard #BDBDBD
+ const apName = {  "b4:fb:e4:xx:xx:xx" : { aname: "AP-LongR" , afarbe: "#737373"},    // standard #BDBDBD   afarbe is not in use !!!!!!
+                   "e0:63:da:xx:xx:xx" : { aname: "AP-Mesh" , afarbe: "#b3b300"},    // standard #BDBDBD
+                   "18:e8:29:xx:xx:xx" : { aname: "AP-Light" , afarbe: "#D8D8D8"}}    // standard #BDBDBD
 
             
 
