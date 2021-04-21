@@ -1,8 +1,8 @@
   //@liv-in-sky 2021  20.4.-12:00
 
  // DAS WIDGET IN DER VIS
- // das Standard html-Widget wird genutzt in der VIS - dazu den DP javascript.x.Tabellen@Liv.SUNIFYClientsTabelleVIS als binding angeben d.h.
- // im html-teil des widgets wird der daten punkt in geschweiften klammern angegeben z.B. {javascript.x.Tabellen@Liv.UNIFYClientsTabelleVIS}
+ // das Standard html-Widget wird genutzt in der VIS - dazu den DP javascript.x.Tabellen@Liv.UNIFIClientsTabelleVIS als binding angeben d.h.
+ // im html-teil des widgets wird der daten punkt in geschweiften klammern angegeben z.B. {javascript.x.Tabellen@Liv.UNIFIClientsTabelleVIS}
 
  // @ts-ignoreMD
  let   braucheEinVISWidget=true;                          // immer true 
