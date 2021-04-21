@@ -267,7 +267,7 @@ let jetzt=new Date().getTime();
 let help=[];
  valOnline="false"; valRSSI="0"; valMAC="---"
 //log("jetzt: "+jetzt.toString()+"  test : " + Date.parse('2020-07-04 17:27:42')) //ew Date('July 20, 69 00:20:18 GMT+00:00')
-$('unifi.0.default.clients.*.mac').each(function(id, i) {           // hier eigene schleife definieren
+$('unifi.0.*.clients.*.mac').each(function(id, i) {           // hier eigene schleife definieren
          var ida = id.split('.');
           valESSID=""
         if (existsState(id.replace("mac","ap_mac")) || existsState(id.replace("mac","sw_mac"))) {
