@@ -1146,9 +1146,10 @@ function Sleep(milliseconds) {
                                         "vallly"      : getState(id).val
                                                         })*/ 
        }
+  let bremser=false     
  on({id: myReactionArr, change: "any"}, function (obj) { 
     //log("bin da","error")
-     writeHTML(true);
+    if (!bremser) {writeHTML(true); bremser=true; setTimeout(function () { bremser=false;  }, 3000);}
   //   if (braucheEinFile) {writeFile(home, path ,htmlOut, function (error) { /* log('file written');*/  });}
  
       
