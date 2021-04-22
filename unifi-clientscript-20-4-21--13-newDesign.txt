@@ -17,7 +17,7 @@
   let mitAlphabet=false;                                  // wenn true wird immer nach namen sortiertiert und eine zeile eingfügt mit dem Anfangsbuchstaben
   let sortierenEIN=true;
   let mitSearch=true;
-  let welcheSortierung=0;                                 // Startsortierung - je nach spalte  0: name; 1: online; 2:type; 3:rssi .....
+  let welcheSortierung=0;                                 // Startsortierung - je nach spalte  0: name; 1: ip; 2:dEVICE; 3:mac, $.sat
   const schalterUmrahmung="0"                              //wenn überschriften buttons sind , den rahmen mit 0 wegmachen 
   let tabletDoppelHilfe=true;                              // auf tablet geht kein doppelklick - es erschein ein weiterer button in der seitenleiste
 
