@@ -1157,14 +1157,15 @@ function Sleep(milliseconds) {
 
 //  LÖSCHE alte Datenpunkte
  on({id: dpDelete , change: "any"}, function (obj) { 
-     
+    var value = obj.state.val; 
  //    deleteMydp(getState(dpDelete).val)
-    deleteObject(getState(dpDelete).val, true); 
+    if(value!=null && value!="" && value!=undefined) deleteObject(getState(dpDelete).val, true); 
        
  setTimeout(function () {  writeHTML(true);  }, 3000);
        // }
     
     })
+
 
 
 
