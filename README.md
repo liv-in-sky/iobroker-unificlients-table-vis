@@ -2,6 +2,7 @@
 
 
 braucht unifi-adapter
+bEDIENUNG SIEHE HIER. https://github.com/liv-in-sky/sonoff-iobroker-script
 
 ![AApossis (39)](https://user-images.githubusercontent.com/18462890/115380120-887c8c80-a1d2-11eb-9070-55b1eb3a7c31.gif)
 
